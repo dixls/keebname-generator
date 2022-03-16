@@ -33,8 +33,8 @@ const ultraRare = [
 ]
 
 function pickWord() {
-    let roll = Math.floor(Math.random() * 10000)
     let pick = Math.floor(Math.random() * keybWords.length)
+    let roll = Math.floor(Math.random() * 10000)
     let rarePick = Math.floor(Math.random() * ultraRare.length)
     if (roll == 666) {
         return ultraRare[rarePick]
@@ -54,5 +54,5 @@ function getName() {
 $('#generate').click(function(evt){
     evt.preventDefault();
     const newName = getName();
-    $('#nameField').text(newName).class("display-3 text-body")
+    $('#nameField').text(newName).attr("class", "display-3 text-dark")
 })
