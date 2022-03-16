@@ -21,7 +21,8 @@ const keybWords = [
     'Mechanical',
     'Board',
     'Matrix',
-    'Works'
+    'Works',
+    'Caps'
 ]
 
 function pickWord() {
