@@ -15,7 +15,9 @@ const keybWords = [
     'keys',
     'type',
     'typist',
-    'thocc'
+    'thocc',
+    'mech',
+    'mechanical'
 ]
 
 function pickWord() {
