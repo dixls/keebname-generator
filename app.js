@@ -22,11 +22,23 @@ const keybWords = [
     'Board',
     'Matrix',
     'Works',
-    'Caps'
+    'Caps',
+    'Cap',
+    'Mod',
+    'Mods'
+]
+
+const ultraRare = [
+    'weeb'
 ]
 
 function pickWord() {
+    let roll = Math.floor(Math.random() * 10000)
     let pick = Math.floor(Math.random() * keybWords.length)
+    let rarePick = Math.floor(Math.random() * ultraRare.length)
+    if (roll == 666) {
+        return ultraRare[rarePick]
+    }
     return keybWords[pick]
 }
 
